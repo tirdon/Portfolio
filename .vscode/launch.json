@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:mainSite}",
+            "name": "Debug mainSite",
+            "target": "mainSite",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug mainSite"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:mainSite}",
+            "name": "Release mainSite",
+            "target": "mainSite",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release mainSite"
+        }
+    ]
+}
