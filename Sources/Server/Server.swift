@@ -6,11 +6,13 @@ import Hummingbird
 @main
 struct Server {
     static func main() async throws {
-        // create router and add a single GET /hello route
         let router = Router()
-        router.get("/") { request, _ -> String in
-            return "Hello"
+
+        // Serve static files from the Client/public directory
+        router.addMiddleware {
+            FileMiddleware("Sources/Client/public", searchForIndexHtml: true)
         }
+
         // create application using router
         let app = Application(
             router: router,

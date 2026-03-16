@@ -1,11 +1,250 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Simple HTML Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swift Portfolio — Developer Projects</title>
+  <meta name="description" content="Portfolio showcasing Swift projects: embedded systems, physics simulations, animation frameworks, and full-stack web apps.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
 </head>
 <body>
-    <h1>Welcome to the Simple HTML Page</h1>
-    <p>This is a basic HTML file.</p>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <span class="swift-icon">S</span>
+        <span>Swift<span style="color: var(--accent-orange);">Dev</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger" id="nav-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="hero-canvas"></canvas>
+    <div class="hero-gradient-orb orb-1"></div>
+    <div class="hero-gradient-orb orb-2"></div>
+    <div class="hero-gradient-orb orb-3"></div>
+
+    <div class="container hero-content">
+      <div class="hero-tag reveal">
+        <span class="dot"></span>
+        Available for collaboration
+      </div>
+      <h1 class="hero-title reveal">
+        Building with<br>
+        <span class="gradient-text">Swift.</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        Crafting elegant solutions across platforms — from embedded firmware on microcontrollers to interactive web experiences and physics simulations.
+      </p>
+      <div class="hero-cta-group reveal">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2"/><path d="M17 17V7H7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          Get in Touch
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="hero-stat">
+          <div class="number" data-count="4" data-suffix="+">0</div>
+          <div class="label">Projects</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number" data-count="6" data-suffix="+">0</div>
+          <div class="label">Technologies</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number" data-count="3" data-suffix="">0</div>
+          <div class="label">Platforms</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-label reveal">About Me</span>
+          <h2 class="section-title reveal">Swift developer<br>across every layer.</h2>
+          <p class="reveal">
+            I'm passionate about using Swift beyond mobile development — pushing it into embedded systems, server-side applications, and creative coding. Every project is an opportunity to explore what Swift can do.
+          </p>
+          <p class="reveal">
+            From writing firmware that runs on ESP32 microcontrollers to building physics-driven interactive simulations, I focus on creating robust, performant, and beautifully architected software.
+          </p>
+          <div class="skill-tags reveal stagger-children">
+            <span class="skill-tag reveal">Swift 6.2</span>
+            <span class="skill-tag reveal">Embedded Swift</span>
+            <span class="skill-tag reveal">SwiftUI</span>
+            <span class="skill-tag reveal">Matter Protocol</span>
+            <span class="skill-tag reveal">Hummingbird</span>
+            <span class="skill-tag reveal">Physics Simulation</span>
+          </div>
+        </div>
+
+        <div class="about-visual stagger-children">
+          <a href="embedded.html" class="about-card reveal">
+            <div class="icon">⚡</div>
+            <h4>Embedded</h4>
+            <p>Swift on microcontrollers — bare metal firmware for IoT devices.</p>
+          </a>
+          <a href="fullstack.html" class="about-card reveal">
+            <div class="icon">🌐</div>
+            <h4>Full-Stack</h4>
+            <p>Server-side Swift with Hummingbird powering web apps.</p>
+          </a>
+          <a href="creative.html" class="about-card reveal">
+            <div class="icon">🎨</div>
+            <h4>Creative</h4>
+            <p>Physics simulations & interactive animations from scratch.</p>
+          </a>
+          <a href="platforms.html" class="about-card reveal">
+            <div class="icon">📱</div>
+            <h4>Platforms</h4>
+            <p>iOS, macOS, watchOS, Wasm — Swift everywhere.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <span class="section-label reveal">Featured Work</span>
+      <h2 class="section-title reveal">Projects.</h2>
+      <p class="section-subtitle reveal">
+        A selection of projects showcasing Swift's versatility across embedded hardware, simulations, and web infrastructure.
+      </p>
+
+      <div class="projects-grid stagger-children">
+
+        <!-- Project 1: Irrigation Controller -->
+        <article class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🌱</div>
+            <span class="project-number">01</span>
+          </div>
+          <h3 class="project-title">ESP32 Irrigation Controller</h3>
+          <p class="project-desc">
+            Smart irrigation firmware written entirely in Embedded Swift for the ESP32-C3 microcontroller. Integrates with Apple Home via the Matter protocol for seamless smart home control of watering zones.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Embedded Swift</span>
+            <span class="tech-tag">ESP32-C3</span>
+            <span class="tech-tag">Matter</span>
+            <span class="tech-tag">IoT</span>
+          </div>
+          <a href="#" class="project-link">
+            View Project <span class="arrow">→</span>
+          </a>
+        </article>
+
+        <!-- Project 2: Physics Interaction -->
+        <article class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">⚛️</div>
+            <span class="project-number">02</span>
+          </div>
+          <h3 class="project-title">Physics Interaction Engine</h3>
+          <p class="project-desc">
+            A real-time physics interaction system featuring rigid body dynamics, collision detection, and interactive object manipulation. Built with a focus on responsive, natural-feeling interactions driven by accurate physics simulation.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Swift</span>
+            <span class="tech-tag">Physics Engine</span>
+            <span class="tech-tag">Collision Detection</span>
+            <span class="tech-tag">Real-time</span>
+          </div>
+          <a href="#" class="project-link">
+            View Project <span class="arrow">→</span>
+          </a>
+        </article>
+
+        <!-- Project 3: Animation Framework -->
+        <article class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🎬</div>
+            <span class="project-number">03</span>
+          </div>
+          <h3 class="project-title">Animation Framework</h3>
+          <p class="project-desc">
+            A Manim-inspired ECS animation engine with an interactive timeline, scrubbing controls, and pause-only interaction mode. Supports complex scene composition, mobject hierarchies, and rich visual transitions.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Swift</span>
+            <span class="tech-tag">ECS Architecture</span>
+            <span class="tech-tag">Canvas</span>
+            <span class="tech-tag">Animation</span>
+          </div>
+          <a href="#" class="project-link">
+            View Project <span class="arrow">→</span>
+          </a>
+        </article>
+
+        <!-- Project 4: Portfolio Server -->
+        <article class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">🚀</div>
+            <span class="project-number">04</span>
+          </div>
+          <h3 class="project-title">Portfolio Server</h3>
+          <p class="project-desc">
+            This very website — a full-stack Swift web application built with Swift 6.2 and Hummingbird. Features a client/server architecture with server-side routing, static file serving, and a modern front-end.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Swift 6.2</span>
+            <span class="tech-tag">Hummingbird</span>
+            <span class="tech-tag">Full-Stack</span>
+            <span class="tech-tag">Server-Side</span>
+          </div>
+          <a href="#" class="project-link">
+            View Project <span class="arrow">→</span>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer / Contact ===== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content reveal">
+        <div class="footer-links">
+          <a href="https://github.com" class="footer-link" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.79 23.4c.6.1.82-.26.82-.58v-2.16c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 00-1.33-1.76c-1.09-.74.08-.73.08-.73a2.52 2.52 0 011.84 1.24 2.56 2.56 0 003.5 1 2.56 2.56 0 01.76-1.61c-2.67-.3-5.47-1.33-5.47-5.93A4.64 4.64 0 015.6 8.22a4.32 4.32 0 01.12-3.17s1-.32 3.3 1.23a11.37 11.37 0 016 0c2.28-1.55 3.28-1.23 3.28-1.23a4.32 4.32 0 01.12 3.17 4.64 4.64 0 011.24 3.22c0 4.61-2.8 5.63-5.48 5.92a2.87 2.87 0 01.82 2.23v3.29c0 .32.22.7.82.58A12 12 0 0012 .3"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:hello@example.com" class="footer-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+            Email
+          </a>
+        </div>
+        <p class="footer-copy">
+          © 2026 — Built with <span class="heart">♥</span> and Swift
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

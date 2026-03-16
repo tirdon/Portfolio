@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Coding — SwiftDev Portfolio</title>
+  <meta name="description" content="Creative coding with Swift — physics simulations, interactive animations, and real-time visual experiences.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="subpage.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="swift-icon">S</span>
+        <span>Swift<span style="color: var(--accent-orange);">Dev</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger" id="nav-hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-glow glow-orange"></div>
+    <div class="container">
+      <a href="index.html#about" class="back-link reveal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        Back to About
+      </a>
+      <div class="subpage-icon reveal">🎨</div>
+      <h1 class="subpage-title reveal">Creative Coding</h1>
+      <p class="subpage-subtitle reveal">Physics simulations & interactive animations from scratch.</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="subpage-content section">
+    <div class="container">
+      <div class="content-grid">
+
+        <div class="content-main">
+          <div class="content-block reveal">
+            <h2>Where Code Meets Art</h2>
+            <p>Creative coding is about expressing ideas through computation. I build interactive visual experiences that blend physics accuracy with artistic intent — from particle simulations to animation engines that bring mathematical concepts to life.</p>
+          </div>
+
+          <div class="content-block reveal">
+            <h2>Physics Simulations</h2>
+            <p>Real-time physics engines require balancing accuracy with performance. I implement rigid body dynamics, collision detection and response, and constraint solvers that feel natural and responsive to user input.</p>
+            <ul class="content-list">
+              <li>Rigid body dynamics with impulse-based collision resolution</li>
+              <li>Spatial partitioning for efficient broad-phase detection</li>
+              <li>Verlet integration for stable, energy-conserving simulations</li>
+              <li>Interactive drag, throw, and manipulation of physics objects</li>
+            </ul>
+          </div>
+
+          <div class="content-block reveal">
+            <h2>Animation Systems</h2>
+            <p>Inspired by libraries like Manim, I've built ECS-based animation frameworks that support complex scene composition, timeline scrubbing, and interactive mobject manipulation. These tools make it possible to create rich, programmatic animations for education and visualization.</p>
+          </div>
+
+          <div class="content-block reveal">
+            <h2>The Creative Process</h2>
+            <p>Every creative project starts with curiosity. What happens if particles follow sine waves? How does a spring system handle 1000 interconnected nodes? The answers always surprise me, and the journey from question to interactive demo is where the real learning happens.</p>
+          </div>
+        </div>
+
+        <aside class="content-sidebar">
+          <div class="sidebar-card reveal">
+            <h3>Technologies</h3>
+            <div class="sidebar-tags">
+              <span class="tech-tag">Swift</span>
+              <span class="tech-tag">Canvas/WebGPU</span>
+              <span class="tech-tag">Physics Engine</span>
+              <span class="tech-tag">ECS</span>
+              <span class="tech-tag">Animation</span>
+              <span class="tech-tag">SIMD</span>
+            </div>
+          </div>
+
+          <div class="sidebar-card reveal">
+            <h3>Key Projects</h3>
+            <h4 class="sidebar-project-title">Physics Interaction Engine</h4>
+            <p>Real-time rigid body simulation with interactive manipulation.</p>
+            <a href="index.html#projects" class="project-link" style="margin-bottom: 20px; display: inline-flex;">View Project <span class="arrow">→</span></a>
+            <h4 class="sidebar-project-title">Animation Framework</h4>
+            <p>Manim-inspired ECS animation engine with timeline controls.</p>
+            <a href="index.html#projects" class="project-link">View Project <span class="arrow">→</span></a>
+          </div>
+
+          <div class="sidebar-card reveal">
+            <h3>Highlights</h3>
+            <ul class="sidebar-list">
+              <li>60fps real-time physics with collision response</li>
+              <li>Programmatic animation with timeline scrubbing</li>
+              <li>Interactive drag-and-drop physics objects</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-copy">© 2026 — Built with <span class="heart">♥</span> and Swift</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

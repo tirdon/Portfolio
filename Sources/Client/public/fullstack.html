@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full-Stack Swift — SwiftDev Portfolio</title>
+  <meta name="description" content="Full-stack Swift development with Hummingbird server framework — building fast, type-safe web applications entirely in Swift.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="subpage.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="swift-icon">S</span>
+        <span>Swift<span style="color: var(--accent-orange);">Dev</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger" id="nav-hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-glow glow-cyan"></div>
+    <div class="container">
+      <a href="index.html#about" class="back-link reveal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        Back to About
+      </a>
+      <div class="subpage-icon reveal">🌐</div>
+      <h1 class="subpage-title reveal">Full-Stack Swift</h1>
+      <p class="subpage-subtitle reveal">Server-side Swift with Hummingbird powering web apps.</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="subpage-content section">
+    <div class="container">
+      <div class="content-grid">
+
+        <div class="content-main">
+          <div class="content-block reveal">
+            <h2>One Language, Every Layer</h2>
+            <p>Full-stack Swift means sharing types, validation logic, and data models between your server and client — no more JSON serialization mismatches or duplicated type definitions. Swift's strong type system ensures correctness across the entire stack.</p>
+          </div>
+
+          <div class="content-block reveal">
+            <h2>Hummingbird Framework</h2>
+            <p>I use Hummingbird as my server framework of choice. It's lightweight, modular, and built on Swift's structured concurrency. With async/await at its core, it handles concurrent requests efficiently without the complexity of callback-based architectures.</p>
+            <ul class="content-list">
+              <li>Router-based request handling with middleware composition</li>
+              <li>Static file serving with configurable caching</li>
+              <li>Structured concurrency for safe, efficient I/O</li>
+              <li>Modular architecture — use only what you need</li>
+            </ul>
+          </div>
+
+          <div class="content-block reveal">
+            <h2>Client-Server Architecture</h2>
+            <p>My projects use a clean client/server split — the server handles routing, API logic, and file serving, while the client provides the interactive front-end. Shared Swift modules enable type-safe communication between layers.</p>
+          </div>
+
+          <div class="content-block reveal">
+            <h2>Deployment</h2>
+            <p>Swift servers compile to native binaries with minimal memory footprint. Combined with Docker and GitHub Actions for CI/CD, deployments are fast and reproducible. The same binary runs locally and in production without runtime dependencies.</p>
+          </div>
+        </div>
+
+        <aside class="content-sidebar">
+          <div class="sidebar-card reveal">
+            <h3>Technologies</h3>
+            <div class="sidebar-tags">
+              <span class="tech-tag">Hummingbird</span>
+              <span class="tech-tag">Swift 6.2</span>
+              <span class="tech-tag">async/await</span>
+              <span class="tech-tag">HTML/CSS/JS</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+          </div>
+
+          <div class="sidebar-card reveal">
+            <h3>Key Project</h3>
+            <h4 class="sidebar-project-title">Portfolio Server</h4>
+            <p>This very website — a Swift 6.2 + Hummingbird full-stack app with client/server architecture.</p>
+            <a href="index.html#projects" class="project-link">View in Projects <span class="arrow">→</span></a>
+          </div>
+
+          <div class="sidebar-card reveal">
+            <h3>Highlights</h3>
+            <ul class="sidebar-list">
+              <li>Shared types between client and server</li>
+              <li>Native binary with sub-10ms startup</li>
+              <li>Middleware-based request pipeline</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-copy">© 2026 — Built with <span class="heart">♥</span> and Swift</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

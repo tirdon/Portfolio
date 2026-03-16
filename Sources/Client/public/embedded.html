@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedded Swift — SwiftDev Portfolio</title>
+  <meta name="description" content="Embedded Swift development for microcontrollers — bare-metal firmware, IoT devices, and Matter protocol integration on ESP32.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="subpage.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐦</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="swift-icon">S</span>
+        <span>Swift<span style="color: var(--accent-orange);">Dev</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-hamburger" id="nav-hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-glow glow-emerald"></div>
+    <div class="container">
+      <a href="index.html#about" class="back-link reveal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        Back to About
+      </a>
+      <div class="subpage-icon reveal">⚡</div>
+      <h1 class="subpage-title reveal">Embedded Swift</h1>
+      <p class="subpage-subtitle reveal">Swift on microcontrollers — bare metal firmware for IoT devices.</p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="subpage-content section">
+    <div class="container">
+      <div class="content-grid">
+
+        <div class="content-main">
+          <div class="content-block reveal">
+            <h2>Why Embedded Swift?</h2>
+            <p>Swift's safety guarantees — optionals, value types, strong typing — make it an exceptional language for firmware where bugs can mean hardware failures. Embedded Swift strips away the runtime overhead, enabling Swift to run directly on resource-constrained microcontrollers.</p>
+          </div>
+
+          <div class="content-block reveal">
+            <h2>What I Build</h2>
+            <p>I develop firmware for ESP32-C3 microcontrollers using Embedded Swift, targeting real-world IoT applications. My work includes smart irrigation controllers that integrate with Apple Home via the Matter protocol, enabling seamless smart home control.</p>
+            <ul class="content-list">
+              <li>Bare-metal GPIO, timer, and peripheral drivers in Swift</li>
+              <li>Matter protocol stack integration for HomeKit compatibility</li>
+              <li>Low-power design patterns for battery-operated sensors</li>
+              <li>Custom build toolchains with Swift 6.2 and CMake</li>
+            </ul>
+          </div>
+
+          <div class="content-block reveal">
+            <h2>Architecture Approach</h2>
+            <p>Embedded firmware benefits enormously from Swift's protocol-oriented design. I structure firmware with clean abstractions between hardware interfaces and application logic, making the code testable and portable across different MCU targets.</p>
+          </div>
+        </div>
+
+        <aside class="content-sidebar">
+          <div class="sidebar-card reveal">
+            <h3>Technologies</h3>
+            <div class="sidebar-tags">
+              <span class="tech-tag">Embedded Swift</span>
+              <span class="tech-tag">ESP32-C3</span>
+              <span class="tech-tag">Matter</span>
+              <span class="tech-tag">GPIO</span>
+              <span class="tech-tag">CMake</span>
+              <span class="tech-tag">FreeRTOS</span>
+            </div>
+          </div>
+
+          <div class="sidebar-card reveal">
+            <h3>Key Project</h3>
+            <h4 class="sidebar-project-title">ESP32 Irrigation Controller</h4>
+            <p>Smart irrigation firmware with zone control, scheduling, and Apple Home integration via Matter.</p>
+            <a href="index.html#projects" class="project-link">View in Projects <span class="arrow">→</span></a>
+          </div>
+
+          <div class="sidebar-card reveal">
+            <h3>Highlights</h3>
+            <ul class="sidebar-list">
+              <li>Zero-cost abstractions for hardware access</li>
+              <li>Compile-time safety for register manipulation</li>
+              <li>Protocol-oriented peripheral drivers</li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-copy">© 2026 — Built with <span class="heart">♥</span> and Swift</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
