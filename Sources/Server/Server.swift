@@ -11,7 +11,10 @@ struct Server {
 
         // Serve static files from the Client/public directory
         router.addMiddleware {
-            FileMiddleware("Sources/Client/public", searchForIndexHtml: true)
+            FileMiddleware("Sources/Client/public", searchForIndexHtml: false)
+        }
+        router.addMiddleware {
+            FileMiddleware("Sources/Client/.build/plugins/PackageToJS/outputs", searchForIndexHtml: true)
         }
 
         let port = Int(Environment().get("PORT") ?? "8080") ?? 8080

@@ -1,5 +1,5 @@
 .DS_Store
-/.build
+**/.build
 /Packages
 xcuserdata/
 DerivedData/
@@ -11,3 +11,6 @@ DerivedData/
 .firebase*
 firebase.*
 .vscode/settings.json
+
+
+!**.build/plugins/PackageToJS/outputs/**
