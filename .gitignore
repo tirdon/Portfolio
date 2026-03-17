@@ -1,5 +1,4 @@
 .DS_Store
-**/.build
 /Packages
 xcuserdata/
 DerivedData/
@@ -13,4 +12,20 @@ firebase.*
 .vscode/settings.json
 
 
-!**.build/plugins/PackageToJS/outputs/**
+# 1. Ignore everything inside .build (but allow Git to enter the directory itself)
+**/.build/*
+
+# 2. Un-ignore the 'plugins' folder
+!**/.build/plugins/
+
+# 3. Ignore everything inside 'plugins' (so other plugins stay hidden)
+**/.build/plugins/*
+
+# 4. Un-ignore the 'PackageToJS' folder
+!**/.build/plugins/PackageToJS/
+
+# 5. Ignore everything inside 'PackageToJS'
+**/.build/plugins/PackageToJS/*
+
+# 6. FINALLY, un-ignore the 'outputs' folder and all its contents!
+!**/.build/plugins/PackageToJS/outputs/
